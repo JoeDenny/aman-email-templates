@@ -1,0 +1,217 @@
+/*
+=============================
+	GLOBAL
+=============================
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	  		box-sizing: border-box;
+}
+* { 
+	margin:0;
+	padding:0;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+}
+
+/*
+=============================
+	ELEMENTS
+=============================
+*/
+
+a {
+	color:inherit;
+}
+a, button {
+	cursor: pointer;
+}
+a.no-underline {
+	text-decoration: none;
+}
+img { 
+	max-width: 100%;
+	border: none;
+	outline: none;
+}
+hr {
+	border: 1px solid #CCCCCC;
+	width: 85.9375%;
+	margin: 0 auto;
+}
+
+/*
+=============================
+	TYPOGRAPHY
+=============================
+*/
+
+h5 {
+	text-transform: uppercase;
+	font-style: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #737070;
+}
+h4 {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #666666;
+	line-height: 1.385;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+}
+h3 {
+	font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #9f8769;
+	line-height: 30px;
+}
+p {
+	font-size: 13px;
+	color: #333333;
+	line-height: 24px;
+}
+span {
+	color: #666666;
+}
+
+
+
+/*
+=============================
+	HEADER
+=============================
+*/
+.wide-content {
+	width: 85.9375%;
+}
+
+/*
+=============================
+	BODY
+=============================
+*/
+.narrow-content {
+	width: 81.875%;
+	text-align: left;
+}
+.btn {
+	width: 182px;
+	height: 40px;
+	display: block;
+	letter-spacing: 0.16em;
+	font-family: 'Conv_WhitneyCondensed-Book', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+.btn-main {
+	background: #9f8769;
+	color: #ffffff;
+	border: none;
+}
+.btn-alt {
+	background: #ffffff;
+	color: #9f8769;
+	border: 1px solid #9f8769;
+}
+.inline div {
+	display: inline-block;
+}
+
+/*
+=============================
+	FOOTER
+=============================
+*/
+.footer-links td {
+	color: #737070;
+	font-size: 12px;
+}
+
+
+
+/*
+=============================
+	RESPONSIVENESS
+=============================
+*/
+.wrap {
+	width: 100%;
+}
+.container {
+	display:block!important;
+	max-width:640px!important;
+	margin:0 auto!important;
+	clear:both!important;
+}
+.content {
+	display: block;
+	max-width: 640px;
+	margin: 0 auto;
+}
+/* makes sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+@media only screen and (max-width: 600px) {
+
+	.mobile-center {
+		text-align: center !important;
+	}
+	.mobile-block a {
+		display: block !important;
+		padding-top: 12px;
+	}
+	.mobile-disappear {
+		display: none !important;
+	}
+	.mobile-center td {
+		width: auto !important;
+	}
+	.column {
+		width: 100% !important;
+	}
+	.btn, .btn-alt {
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-decoration: none;
+	}
+
+	/*
+	=====================================
+	ATTRIBUTE SELECTOR METHOD
+	=====================================
+	*/
+	*[class="mobile-center"] { text-align: center !important; }
+	*[class="mobile-disappear"] { display: none !important; }
+	*[class="column"] { width: 100% !important; }
+	button[class="btn"] {
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-decoration: none;
+	}
+	button[class="btn-alt"] {
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-decoration: none;
+	}
+	*[id="gmail"] {  
+	    display:none;
+	    width:0;
+	    overflow:hidden;
+	    float:left;
+	    max-height:0;
+	  }
+
+
+}
+

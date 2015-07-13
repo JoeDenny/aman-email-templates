@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- If you delete this tag, the sky will fall on your head -->
+	<meta name="viewport" content="width=device-width" />
+
+	<style type="text/css">
+
+		@font-face {
+		  font-family: 'Conv_Whitney-Light';
+		  src: url('assets/fonts/Whitney-Light/fonts/Whitney-Light.eot');
+		  src: local('☺'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.woff') format('woff'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.ttf') format('truetype'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.svg') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: 'Conv_WhitneyCondensed-Book';
+		  src: url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.eot');
+		  src: local('☺'), url('../fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.woff') format('woff'), url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.ttf') format('truetype'), url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.svg') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+	</style>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZURBemails</title>
+		
+	
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/email.css" />
+
+	<style type="text/css">
+
+	/*
+=============================
+	GLOBAL
+=============================
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	  		box-sizing: border-box;
+}
+* { 
+	margin:0;
+	padding:0;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+}
+
+/*
+=============================
+	ELEMENTS
+=============================
+*/
+
+a {
+	color:inherit;
+}
+a, button {
+	cursor: pointer;
+}
+a.no-underline {
+	text-decoration: none;
+}
+img { 
+	max-width: 100%;
+	border: none;
+	outline: none;
+}
+hr {
+	border: 1px solid #CCCCCC;
+	width: 85.9375%;
+	margin: 0 auto;
+}
+
+/*
+=============================
+	TYPOGRAPHY
+=============================
+*/
+
+h5 {
+	text-transform: uppercase;
+	font-style: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #737070;
+}
+h4 {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #666666;
+	line-height: 1.385;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+}
+h3 {
+	font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #9f8769;
+	line-height: 30px;
+}
+p {
+	font-size: 13px;
+	color: #333333;
+	line-height: 24px;
+}
+span {
+	color: #666666;
+}
+
+
+
+/*
+=============================
+	HEADER
+=============================
+*/
+.wide-content {
+	width: 85.9375%;
+}
+
+/*
+=============================
+	BODY
+=============================
+*/
+.narrow-content {
+	width: 81.875%;
+	text-align: left;
+}
+.btn {
+	width: 182px;
+	height: 40px;
+	display: block;
+	letter-spacing: 0.16em;
+	font-family: 'Conv_WhitneyCondensed-Book', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+.btn-main {
+	background: #9f8769;
+	color: #ffffff;
+	border: none;
+}
+.btn-alt {
+	background: #ffffff;
+	color: #9f8769;
+	border: 1px solid #9f8769;
+}
+.inline div {
+	display: inline-block;
+}
+
+/*
+=============================
+	FOOTER
+=============================
+*/
+.footer-links td {
+	color: #737070;
+	font-size: 12px;
+}
+
+
+
+/*
+=============================
+	RESPONSIVENESS
+=============================
+*/
+.wrap {
+	width: 100%;
+}
+.container {
+	display:block!important;
+	max-width:640px!important;
+	margin:0 auto!important;
+	clear:both!important;
+}
+.content {
+	display: block;
+	max-width: 640px;
+	margin: 0 auto;
+}
+/* makes sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+
+@media only screen and (max-width: 600px) {
+
+	.mobile-center {
+		text-align: center !important;
+	}
+	.mobile-hotel-info {
+		display: none !important;
+	}
+	.mobile-center td {
+		width: auto !important;
+	}
+	.column {
+		width: 100% !important;
+		/*margin-top: 20px;*/
+	}
+
+	*[id="gmail"] {  
+	    display:none;
+	    width:0;
+	    overflow:hidden;
+	    float:left;
+	    max-height:0;
+	  }
+
+	/*
+	=====================================
+	make buttons wider for mobile
+	=====================================
+	*/
+
+
+	.btn, .btn-alt {
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-decoration: none;
+	}
+
+	
+
+}
+
+
+
+
+	</style>
+
+</head>
+
+<body bgcolor="#ffffff">	
+
+
+<!--
+==========
+HEADER
+==========
+-->
+<table class="wrap" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="container" bgcolor="#413c3c">
+
+			<!-- HEADER CONTENT -->
+			<div class="content wide-content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="22px"></td></tr></table>
+
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+
+						<!-- Logo with styles in case img does not load -->
+						<td class="mobile-center"><img src="assets/images/Logo_amanoi.png" alt="AMANOI"  style="border:0;font-size: 36px; color: #ffffff; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.2em;"></td>
+
+						<td class="mobile-hotel-info" id="gmail" align="right">
+							<h5>Amanoi,  Canyon point, Utah</h5>
+							<h5 style="color:#bbbbbb">830000 USA phone: +12 34567890123</h5>
+						</td>
+
+					</tr>
+				</table>
+				<!-- END -->
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="22px"></td></tr></table>
+
+			</div>
+
+
+
+			<!-- HERO IMAGE -->
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td>							
+						<p><img src="assets/images/HERO Giri Slot Canyon.png"></p>
+					</td>
+				</tr>
+			</table>
+			<!-- END -->
+	
+		</td>
+	</tr>
+</table>
+
+
+
+<!--
+==========
+CANCELLATION SECTION
+==========
+-->
+<table class="wrap" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="container">
+			
+			<div class="content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="40px"></td></tr></table>
+
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td align="center">
+							
+							<!-- CANCELLATION image with styles for alt text in case img loading fails -->
+							<p><img src="assets/images/CANCELLATION.png" alt="CANCELLATION" style="font-size: 32px; font-weight: 100; color: #cccccc; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.1em;">
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+							<h4>YOUR RESERVATION HAS BEEN CANCELLED</h4>
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="30px"></td></tr></table>
+
+							<div class="content wide-content">
+								<p><spran>If you have any questions, please call the %HNAME% reservation department at %HResvPhn% send an email to a%HResvEmail%</spran></p>
+							</div>
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="40px"></td></tr></table>
+
+							<hr>
+
+						</td>
+
+					</tr>
+				</table>
+
+			</div>
+
+		</td>
+	</tr>
+</table>
+
+
+
+<!--
+==========
+BODY
+==========
+-->
+<table class="wrap" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="container">
+			
+			<div class="content narrow-content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="30px"></td></tr></table>
+
+					<p>Confirmation number: %ConfirmNo%</p>
+					
+					<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+					<!-- DESTINATION DETAILS -->
+					<h3>DESTINATION DETAILS</h3>
+					<p><span>Guest name:</span> %CTitle% %CFirstName% %CLastName%</p>
+					<p><span>Arrival Date:</span> %ArrivalDt%</p>
+					<p><span>Departure Date:</span> %DepartDt%</p>
+					<p><span>Number of guests:</span> %GuestQty%</p>
+					<p><span>Total:</span> %TotalCost%</p>
+					<p><span>Rate Inclusions:</span> %RateShortDesc%</p>
+					<p><span>Room Quantity:</span> %RmQty%</p>
+
+					<table><tr><td height="19px"></td></tr></table>
+
+					<!-- ACCOMMODATION DETAILS -->
+					<h3>ACCOMMODATION DETAILS</h3>
+					<p><span>Room Type:</span> Spacious suits overlooking tranquil courtyards with 72m&sup2; (775sq.ft) of elegantly decorated space to dwell, sleep and refresh.</p>
+					
+					<table><tr><td height="19px"></td></tr></table>
+
+					<!-- CANCELLATION POLICY -->
+					<h3>CANCELLATION POLICY</h3>
+					<p><span>Policies:</span> No payment has been taken from your card and the booking has been fully cancelled.</p>
+					
+					<table><tr><td height="19px"></td></tr></table>
+
+					<p>We look forward to welcoming you soon.</p>
+
+					<table><tr><td height="26px"></td></tr></table>
+
+
+					<!-- MAKE A NEW BOOKING button and DISCOVER AMAN button -->
+
+					<div class="inline" style="max-width: 600px;">
+						<div class="column" style="width: 200px;">
+							<a href="#" class="no-underline">
+								<button class="btn btn-main">MAKE A NEW BOOKING</button>
+							</a>
+						</div>
+
+						<div style="height:30px; width: 0;"></div>
+
+						<div class="column" style="width: 200px;">
+							<a href="#" class="no-underline">
+								<button class="btn btn-alt">DICOVER AMANOI</button>
+							</a>
+						</div>
+				
+					</div>
+				
+			</div>
+
+
+		</td>
+	</tr>
+</table>
+
+<table><tr><td height="46px"></td></tr></table>
+
+
+
+<!--
+==========
+FOOTER
+==========
+-->
+<table class="wrap" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="container" bgcolor="#413c3c">
+
+			<!-- FOOTER CONTENT -->
+			<div class="content wide-content">
+				
+				<table cellspacing="0" cellpadding="0"><tr><td height="39px"></td></tr></table>
+
+				<!-- MORE INFORMATION image with styles for alt text in case img loading fails -->	
+				<p class="mobile-center"><img src="assets/images/More Information.png" alt="MORE INFORMATION" style="font-size: 14px; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; color: #737070; letter-spacing: 0.08em;"></p>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+				<table class="footer-links mobile-center mobile-block" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+							<a href="#" class="no-underline">Sitemap <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Privacy policy <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Terms of use <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Media &amp; Awards <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Contact us</a>
+						</td>
+						
+					</tr>		
+				</table>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="34px"></td></tr></table>
+
+				<!-- FOLLOW US image with styles for alt text in case img loading fails -->
+				<p class="mobile-center"><img src="assets/images/FOLLOW US.png" alt="FOLLOW US" style="font-size: 14px; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; color: #737070; letter-spacing: 0.08em;"></p>
+				
+				<table cellspacing="0" cellpadding="0"><tr><td height="18px"></td></tr></table>
+				
+				<table class="footer-links mobile-center">
+					<tr>
+						<td>
+							<a href="#" class="no-underline">Facebook <span style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Twitter <span style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Instagram</a>
+						</td>
+					</tr>
+				</table>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="36px"></td></tr></table>
+
+
+			</div>
+			
+		</td>
+	</tr>
+</table>
+
+
+
+</body>

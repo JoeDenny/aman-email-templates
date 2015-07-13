@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- If you delete this tag, the sky will fall on your head -->
+	<meta name="viewport" content="width=device-width" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZURBemails</title>
+
+	<style type="text/css">
+
+		@font-face {
+		  font-family: 'Conv_Whitney-Light';
+		  src: url('assets/fonts/Whitney-Light/fonts/Whitney-Light.eot');
+		  src: local('☺'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.woff') format('woff'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.ttf') format('truetype'), url('assets/fonts/Whitney-Light/fonts/Whitney-Light.svg') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		@font-face {
+		  font-family: 'Conv_WhitneyCondensed-Book';
+		  src: url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.eot');
+		  src: local('☺'), url('../fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.woff') format('woff'), url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.ttf') format('truetype'), url('assets/fonts/WhitneyCondensed-Book/fonts/WhitneyCondensed-Book.svg') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+	</style>
+		
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/email.css" />
+
+	<style type="text/css">
+
+
+
+
+	</style>
+
+	
+
+</head>
+
+<body bgcolor="#ffffff">	
+
+
+<!--
+==========
+HEADER
+==========
+-->
+<table class="wrap" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="container" bgcolor="#413c3c">
+
+			<!-- HEADER CONTENT -->
+			<div class="content wide-content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="22px"></td></tr></table>
+
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+
+						<!-- Logo with styles in case img does not load -->
+						<td class="mobile-center"><img src="assets/images/Logo_amanoi.png" alt="AMANOI"  style="font-size: 36px; color: #ffffff; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.2em; border:0"></td>
+
+						<td class="mobile-disappear" id="gmail" align="right">
+							<h5>Amanoi,  Canyon point, Utah</h5>
+							<h5 style="color:#bbbbbb">830000 USA phone: +12 34567890123</h5>
+						</td>
+
+					</tr>
+				</table>
+				<!-- END -->
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="22px"></td></tr></table>
+
+			</div>
+
+
+
+			<!-- HERO IMAGE -->
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td>							
+						<p><img src="assets/images/HERO Giri Slot Canyon.png"></p>
+					</td>
+				</tr>
+			</table>
+			<!-- END -->
+	
+		</td>
+	</tr>
+</table>
+
+
+
+<!--
+==========
+CONFIRMATION SECTION
+==========
+-->
+<table class="wrap" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="container">
+			
+			<div class="content wide-content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="40px"></td></tr></table>
+
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td align="center">
+							
+							<!-- CONFIRMATION image with styles for alt text in case img loading fails -->
+							<p><img src="assets/images/CONFIRMATION.png" alt="CONFIRMATION" style="font-size: 32px; font-weight: 100; color: #cccccc; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.1em;">
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+							<h4>Thank you for your reservation at %HName%</h4>
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="30px"></td></tr></table>
+
+
+						
+
+							<!-- ADD TO CALENDAR btn -->
+
+							<a href="#" class="no-underline">
+								<button class="btn btn-main">ADD TO CALENDAR</button>
+							</a>
+
+
+
+							<table cellspacing="0" cellpadding="0"><tr><td height="40px"></td></tr></table>
+
+							<hr>
+
+						</td>
+
+					</tr>
+				</table>
+
+			</div>
+
+		</td>
+	</tr>
+</table>
+
+
+
+<!--
+==========
+BODY
+==========
+-->
+<table class="wrap" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="container">
+			
+			<div class="content narrow-content">
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="30px"></td></tr></table>
+
+					<p>Confirmation number: %ConfirmNo%</p>
+					
+					<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+					<!-- RESERVATION DETAILS -->
+					<h3>Reservation Details</h3>
+					<p><span>Guest name:</span> %CTitle% %CFirstName% %CLastName%</p>
+					<p><span>Arrival Date:</span> %ArrivalDt%</p>
+					<p><span>Departure Date:</span> %DepartDt%</p>
+					<p><span>Number of guests:</span> %GuestQty%</p>
+					<p><span>Total:</span> %TotalCost%</p>
+					<p><span>Rate Inclusions:</span> %RateShortDesc%</p>
+					<p><span>Room Quantity:</span> %RmQty%</p>
+
+					<table><tr><td height="19px"></td></tr></table>
+
+					<!-- ACCOMMODATION DETAILS -->
+					<h3>ACCOMMODATION DETAILS</h3>
+					<p><span>Room Type:</span> Spacious suits overlooking tranquil courtyards with 72m&sup2; (775sq.ft) of elegantly decorated space to dwell, sleep and refresh.</p>
+					
+
+					<table><tr><td height="19px"></td></tr></table>
+
+					<!-- BOOKING POLICY -->
+					<h3>BOOKING POLICY</h3>
+					<p><span>Policies:</span> Credit card required to make a reservation. In the event of late cancellation within 3 days of your arrival, 1- night room charge plus surcharge will be applied as penalty.</p>
+					
+
+					<table><tr><td height="19px"></td></tr></table>
+
+					<!-- DESTINATION DETAILS -->
+					<h3>DESTINATION DETAILS</h3>
+					<p><span>If you have any questions, please call the %HName% reservation department 
+at <a href="#">%HResvPhn%</a> or send an email to <a href="#">a%HResvEmail%.</a></span></p>
+
+					<table cellspacing="0" cellpadding="0"><tr><td height="58px"></td></tr></table>
+				
+			</div>
+
+
+
+			<!-- MODIFY RESERVATION button -->
+			<div class="content wide-content">
+
+				<!-- MODIFY RESERVATION button -->	
+				<a href="#" class="no-underline">
+					<button class="btn btn-alt">MODIFY RESERVATION</button>
+				</a>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="52px"></td></tr></table>
+				
+			</div>
+
+		</td>
+	</tr>
+</table>
+
+
+
+<!--
+==========
+FOOTER
+==========
+-->
+<table class="wrap" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="container" bgcolor="#413c3c">
+
+			<!-- FOOTER CONTENT -->
+			<div class="content wide-content">
+				
+				<table cellspacing="0" cellpadding="0"><tr><td height="39px"></td></tr></table>
+
+				<!-- MORE INFORMATION image with styles for alt text in case img loading fails -->	
+				<p class="mobile-center"><img src="assets/images/More Information.png" alt="MORE INFORMATION" style="font-size: 14px; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; color: #737070; letter-spacing: 0.08em;"></p>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="20px"></td></tr></table>
+
+				<table class="footer-links mobile-center mobile-block" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+							<a href="#" class="no-underline">Sitemap <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Privacy policy <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Terms of use <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Media &amp; Awards <span class="mobile-disappear" style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Contact us</a>
+						</td>
+						
+					</tr>		
+				</table>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="34px"></td></tr></table>
+
+				<!-- FOLLOW US image with styles for alt text in case img loading fails -->
+				<p class="mobile-center"><img src="assets/images/FOLLOW US.png" alt="FOLLOW US" style="font-size: 14px; font-family: 'Conv_Whitney-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif; text-transform: uppercase; color: #737070; letter-spacing: 0.08em;"></p>
+				
+				<table cellspacing="0" cellpadding="0"><tr><td height="18px"></td></tr></table>
+				
+				<table class="footer-links mobile-center">
+					<tr>
+						<td>
+							<a href="#" class="no-underline">Facebook <span style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Twitter <span style="padding: 0 10px;">|</span></a>
+							<a href="#" class="no-underline">Instagram</a>
+						</td>
+					</tr>
+				</table>
+
+				<table cellspacing="0" cellpadding="0"><tr><td height="36px"></td></tr></table>
+
+
+			</div>
+			
+		</td>
+	</tr>
+</table>
+
+
+
+</body>
